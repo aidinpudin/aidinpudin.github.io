@@ -9,44 +9,117 @@
     <!-- Style -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/google.png" type="image/png">
-</head>
-<body>
-    <div class="container">
-        <header>
 
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b24c8b3ec1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a class="" href="https://mail.google.com/mail/&amp;ogbl" target="_top">Gmail</a></li>
+                    <li><a class="" href="https://www.google.com.uy/imghp?&amp;ogbl" target="_top">Imágenes</a></li>
+                    <li class="icon-container dots" id="dots-li">
+                        <div class="dots-icon" id="dots">
+                            <a  href=""></a>
+                        </div>
+                    </li>
+                    <li class="icon-container">
+                        <a href="https://accounts.google.com/SignOutOptions?continue=https://www.google.com/">
+                            <img class="block" src="img/aloha.jpg" srcset="img/alohaChico1.jpg 3x" aria-hidden="true" data-noaft="" data-atf="1" data-frt="0" alt="Imagen de Perfil">
+                        </a> 
+                    </li>
+                </ul>
+            </nav>
+    
+        <!-- section apps desplegable-->
+        <div class="apps-container hidden" id="apps">
+            <ul>
+                <li>Drive</li>
+                <li>Calendario</li>
+                <li>Mapas</li>
+                <li>Play</li>
+                <li>Gmail</li>
+                <li>Búsqueda</li>
+                <li>Negocios</li>
+                <li>Youtube</li>
+                <li>Fotos</li>
+                <li>Noticias</li>
+                <li>Meet</li>
+                <li>Chat</li>
+            </ul>
+        </div>
         </header>
 
     <section>
-        <img src="img/googlewhite.jpg" alt="Google">
-
-        <div class="btns-holder">
-            <a href="#">Buscar con Google</a>
-            <a href="#">Voy a tener suerte</a>
+        <img class="logo" src="img/googlewhite.png" alt="Google">
+        <div class="search-box">
+            <div class="search" id="search">
+                <div class="lupa">
+                    <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg>
+                </div>
+                <input type="text" id="search-input" title="Buscar" autocomplete="off">
+                <div class="search-buttons">
+                    <svg id="cross" class="hidden" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+                    <div class="search-buttons-item"><a href=""><img src="img/micro.png" alt="Búsqueda por voz" title="Búsqueda por voz"></a></div>
+                    <div class="search-buttons-item"><a href=""><img src="img/camara.svg" alt="Búsqueda con cámara" title="Búsqueda por imagen"></a></div>
+                </div>
+            </div> 
+            
+            <!-- section busqueda desplegable -->
+            <div class="busqueda hidden" id="search-box">
+                <div class="busqueda-line"></div>
+                <ul id="search-list">
+                    <li>
+                        <div class="recent-img"></div>   
+                        <span>Cursos de Codearock</span>
+                        <div class="borrar">Borrar</div>
+                    </li>
+                    <li>
+                        <div class="recent-img"></div>   
+                        <span>HTML for babies</span>
+                        <div class="borrar">Borrar</div>
+                    </li>
+                    <li>
+                        <div class="recent-img"></div>   
+                        <span>como aprender javascript y no morir en el intento</span>
+                        <div class="borrar">Borrar</div>
+                    </li>
+                </ul>
+            </div>
+        </div> 
+        <div class="botones">
+            <button class="boton">
+                <a href="#">Buscar con Google</a>
+            </button>
+            <button class="boton">
+                <a href="https://www.google.com/doodles">Voy a tener suerte</a>
+            </button>
         </div>
-        
-
-    </form>
+        <div class="txt-final">
+            Ofrecido por Google en: 
+            <a href="https://www.google.com/setprefs?sig=0_ia1ka2mDdrM_gZXEFQTZM0BZnj8%3D&amp;hl=es-419&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwjehcm_-rP9AhVVrZUCHfoKASsQ2ZgBCBA">Español (Latinoamérica)</a>
+        </div>
     </section>
 
-
+    <!-- footer -->
     <footer>
-        <div class="f-top"> Argentina</div>
+        <div class="f-top">Argentina</div>
         <div class="f-bot">
-        <div class="f-left">
-            <a href="#">Sobre Google</a>
-            <a href="#">Publicidad</a>
-            <a href="#">Negocios</a>
-            <a href="#">Cómo funciona la Búsqueda</a>
-        </div>
-        <div class="f-right">
-            <a href="#">Privacidad</a>
-            <a href="#">Condiciones</a>
-            <a href="#">Preferencias</a>
-        </div>
+        <ul class="f-left">
+            <li><a href="https://about.google/">Sobre Google</a></li>
+            <li><a href="https://ads.google.com/home/">Publicidad</a></li>
+            <li><a href="https://www.google.com/services">Negocios</a></li>
+            <li><a href="https://google.com/search/howsearchworks">Cómo funciona la Búsqueda</a></li>
+        </ul>
+            <ul class="f-right">
+            <li><a href="https://policies.google.com/privacy">Privacidad</a></li>
+            <li><a href="https://policies.google.com/">Condiciones</a></li>
+            <li><a href="#">Preferencias</a></li>
+        </ul>
         </div>
     </footer>
-
-
-    </div>
+    <script src="js/main.js"></script>
 </body>
 </html>
